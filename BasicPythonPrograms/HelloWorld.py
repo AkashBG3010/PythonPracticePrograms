@@ -1,9 +1,7 @@
-import re
-
-name = input("Enter Your name: ")
-if re.match("[A-Za-z]{3,}", name):
-    print("Hello", name, "How are you?")
+name = str(input("Enter Your name: "))  #Reading user input
+if len(str) > 2:  # Validating for condition
+    print("Hello", name, "How are you?")  # Printing the statement
 else:
-    print("Entered name is incorrect!")
+    print("Entered name is incorrect!")     # Error statement
 
 print("----End of Program-----")

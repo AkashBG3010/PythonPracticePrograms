@@ -1,22 +1,22 @@
-import time
+import time    # Importing tile library
 
-def time_convertion(sec):
-    mins = sec // 60
+def time_convertion(sec):       # initiating time conversion function
+    mins = sec // 60            # conversions
     sec = sec % 60
     hours = mins // 60
     mins = mins % 60
 
-    input("Press Enter to start the stopwatch: \n")
+    input("Press Enter to start the stopwatch: \n")     # Reading User Input
     print("The Stopach watch has started....")
-    start_time = time.time()
+    start_time = time.time()        # Starting Timer
 
-    input("Press Enter to stop the stopwatch: \n")
+    input("Press Enter to stop the stopwatch: \n")      # Reading User Input
     print("-----The Stopach watch has ended------")
-    end_time = time.time()
+    end_time = time.time()      # Stopping Timer
 
-    time_lapsed = end_time - start_time
+    time_lapsed = end_time - start_time     # Total time elapsed calculation
     time_convertion(time_lapsed)
-    print("Total Time Lapsed = {0}:{1}:{2}".format(int(hours), int(mins), sec))
+    print("Total Time Lapsed = {0}:{1}:{2}".format(int(hours), int(mins), sec))     # Printing result
 
 
 
