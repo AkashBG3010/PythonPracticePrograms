@@ -1,34 +1,39 @@
-def binarySearchAppr(array, start, end, word):      # check condition
+tree = [None] * 10  # numbering starting from 0 to n-1.
 
-    sorted_array = sort_array(array)
 
-    if end >= start:  # If element is present at the middle
-        mid = start + (end - start) // 2
-        if sorted_array[mid] == word:  # If element is smaller than mid
-            return mid
-        elif sorted_array[mid] > word:  # Else the element greater than mid
-            return binarySearchAppr(sorted_array, start, mid - 1, word)
+def root(key):
+    if tree[0] != None:
+        print("Tree already had root")
+    else:
+        tree[0] = key
+
+
+def set_left(key, parent):
+    if tree[parent] == None:
+        print("Can't set child at", (parent * 2) + 1, ", no parent found")
+    else:
+        tree[(parent * 2) + 1] = key
+
+
+def set_right(key, parent):
+    if tree[parent] == None:
+        print("Can't set child at", (parent * 2) + 2, ", no parent found")
+    else:
+        tree[(parent * 2) + 2] = key
+
+
+def print_tree():
+    for i in range(10):
+        if tree[i] != None:
+            print(tree[i], end="")
         else:
-            return binarySearchAppr(sorted_array, mid + 1, end, word)
-    else:  # Element is not found in the array
-        return -1
+            print("-", end="")
+    print()
 
 
-def sort_array(array):
-    sorted_array = sorted(array)
-    return sorted_array
-
-
-array = ['cat', 'dog', 'bird', 'fish', 'elephant', 'horse', 'tiger', 'lion']
-print("Array is: ", array)
-start = 0       # Variables
-end = len(array) - 1
-
-word = str(input("Enter the word to be searched in the array: \n"))
-result = binarySearchAppr(array, start, end, word)
-
-if result != -1:
-    print("Array after sorted: ", sort_array(array))
-    print("Entered word-", word, " is present at index ", int(result))
-else:
-    print("Entered word-", word, " is not present in array")
+root('A')
+set_right('C', 0)
+set_left('D', 1)
+set_right('E', 1)
+set_right('F', 2)
+print_tree()
