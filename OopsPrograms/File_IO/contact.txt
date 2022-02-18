@@ -1,0 +1,22 @@
+CONTACT LIST----->
+
+1)
+    Name: Sameep Pai KS
+    Age : 21
+    Phone Number: +91 9876543210
+    Email: sameep@gmail.com
+    Address: Bengaluru, Karnataka
+
+2)
+    Name: Pavan Kumar VS
+    Age : 22
+    Phone Number: +91 9638520741
+    Email: pavan@gmail.com
+    Address: Shivamogga, Karnataka
+
+3)
+    Name: Shiva Kumar BM
+    Age : 23
+    Phone Number: +91 951374620
+    Email: shivu@gmail.com
+    Address: Thirthhalli, Karnataka
