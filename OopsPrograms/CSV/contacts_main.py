@@ -1,15 +1,23 @@
 import csv
 
+
 # Regular reader and writer method
+def operations_csv():
 
-with open('contact.csv', 'r') as csv_file:
-    csv_reader = csv.reader(csv_file)
+    with open('contact.csv', 'r') as csv_file:
+        csv_reader = csv.reader(csv_file)
 
-    with open('new_contact.csv', 'w') as new_file:
-        csv_writer = csv.writer(new_file, delimiter='\t')
+        with open('new_contact.csv', 'w') as new_file:
+            csv_writer = csv.writer(new_file, delimiter='\t')
 
-        for line in csv_reader:
-            csv_writer.writerow(line)
+            for line in csv_reader:
+                csv_writer.writerow(line)
+
+
+class main:
+    operations_csv()
+
+print("------End of program------")
 
 
 # Dictionary reader and writer method
