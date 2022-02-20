@@ -1,12 +1,25 @@
 import json
 
-with open('grocery_main.json') as file:
-    data = json.load(file)
+class main():
 
-for resource in data['resources']:
-    data["total_cost"] = "1000"
+    def json_operation(filename = 'grocery_main.json'):
+        with open(filename, 'r+') as file:
+            data = json.load(file)
 
-with open('new_grocery_main.json', 'w') as file:
-    json.dump(data, file, indent=2)
+            data["resource1"][0]["total_price"] = "1750"
+            data["resource2"][0]["total_price"] = "725"
+            data["resource3"][0]["total_price"] = "250"
 
-# print(new_data)
+            file.seek(0)
+
+            json.dump(data, file, indent = 4)
+
+class subClass(main):
+    if __name__ == '__main__':
+
+        main.json_operation()
+
+    print("Successfully added total price for each grocery")
+
+print("\n")
+print("------End of program------")

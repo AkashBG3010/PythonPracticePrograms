@@ -1,0 +1,26 @@
+{
+    "resource1": [
+        {
+            "grocery_name": "Rice",
+            "weight": "50kg",
+            "price/kg": "rs.35",
+            "total_price": "1750"
+        }
+    ],
+    "resource2": [
+        {
+            "grocery_name": "Pulses",
+            "weight": "5kg",
+            "price/kg": "rs.145",
+            "total_price": "725"
+        }
+    ],
+    "resource3": [
+        {
+            "grocery_name": "Wheat",
+            "weight": "10kg",
+            "price/kg": "rs.25",
+            "total_price": "250"
+        }
+    ]
+}
