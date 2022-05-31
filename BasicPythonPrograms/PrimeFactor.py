@@ -3,7 +3,7 @@ if num < 0:
 	print("Please enter a positive integer")
 
 elif num == 1:
-    print("1 is not a prime numer, So it do not have any prime factors")
+    print("1 is not a prime number, So it does not have any prime factors")
 
 else:
     print("Prime Factors of ",num, "are: ")
