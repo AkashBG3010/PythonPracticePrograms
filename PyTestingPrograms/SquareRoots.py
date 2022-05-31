@@ -20,5 +20,4 @@ if number > 0:  # validating input
 else:
     print("Invalid Input!")  # Error message
 
-
 print("------End of program------")
